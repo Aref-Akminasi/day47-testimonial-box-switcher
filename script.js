@@ -54,7 +54,7 @@ const testimonials = [
 let idx = 0;
 
 function updateTestimonial() {
-  const { name, position, photo, text } = testimonials[idx]; // Using destructuring make it more handy than repeating, ex: 'testimonials.name'
+  const { name, position, photo, text } = testimonials[idx]; // Using destructuring make it more handy than repeating, ex: 'testimonials[idx].name'
   testimonial.innerHTML = text;
   userImage.src = photo;
   username.innerHTML = name;
